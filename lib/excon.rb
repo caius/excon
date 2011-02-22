@@ -23,6 +23,7 @@ module Excon
   class << self
     # @return [String] The filesystem path to the SSL Certificate Authority
     attr_accessor :ssl_ca_path
+    attr_accessor :ssl_ca_file
 
     # @return [true, false] Whether or not to verify the peer's SSL certificate / chain
     attr_reader :ssl_verify_peer
